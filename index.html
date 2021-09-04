@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="./Preloader/preloader.css" rel="stylesheet" />
+  <link href="fontAndPadd.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="adaptiv.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+    user-scalable=no, maximum-scale=1" />
+  <title>Active Money</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src='/mask/jquery.maskedinput.min.js'></script>
+</head>
+
+<body class="hidden">
+  <!-- Прелоадер -->
+  <div class="preloader">
+    <div id="loader"></div>
+  </div>
+  <div class='all'>
+    <!-- Секция формы благодарности: "Спасибо за заявку" -->
+    <div class='thank-application sections-application '>
+      <div class='container-thank'>
+        <div class='container-btn-close'>
+          <div class='btn-close'></div>
+        </div>
+        <div class='container-text-thank'>
+          <div class='title-thank ProximaNova-Bold FS-20'>СПАСИБО ЗА ЗАЯВКУ</div>
+          <div class='article-thank ProximaNova-Regular FS-16 padT-20'>Ваша заявка отправлена</div>
+        </div>
+      </div>
+    </div>
+    <!-- Секция всплывающей формы для подачи заявки  -->
+    <div class='submitting-application sections-application'>
+      <div class='container-appearance-form'>
+        <div class='workspace-submitting-application'>
+          <div class='container-btn-close'>
+            <div class='btn-close'></div>
+          </div>
+          <div class='workspace-title ProximaNova-Bold FS-22'>ЗАКАЗАТЬ ЗВОНОК</div>
+          <div class='workspace-article ProximaNova-Regular FS-16'>
+            Оставте Ваши контактные данные
+            <div>и наш менеджер перезвонит вам</div>
+          </div>
+          <form class='form-submitting-application form'>
+              <input class="input-form-application input-name" name='name' type="text" placeholder="Ваше имя" />
+              <input id='phone1' class="input-form-application input-number-phone" name='tlf' type="text"
+                placeholder="Ваш номер телефона" />
+            <button class='btn-form-submitting-application FS-15 
+                  ProximaNova-bold btn-forAll thank' type="submit">Получить материалы</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Шапка -->
+    <header class="header padT-B-80">
+      <div class="container">
+        <!-- Верхняя секция шапки -->
+        <div class="header-top">
+          <div class="logo">
+            <img src="images/free_horizontal_on_white_by_logaster.png" alt="Logo" style="width: 100%; height: 100%" />
+          </div>
+          <div class="info-header-top ProximaNova-Regular FS-16">
+            <div class='section-info-header-top_text'>
+              Обучаем зарабатывать и инвестировать
+              <div class='st'>на финансовых рынках с минимумом риска</div>
+              </span>
+            </div>
+          </div>
+          <div class="phone-number">
+            <div class='section-question'>Есть вопросы?</div>
+            <div class='section-number'>+7 535 111 10 01</div>
+          </div>
+          <div class="container-btn-call-me btn-submitting-application">
+            <button class='btn-call-me FS-15 btn-forAll application' type="button">Перезвоните мне!</button>
+          </div>
+        </div>
+        <!-- Центральная секция шапки -->
+        <div class="header-middle">
+          <div class="info-header-middle">
+            <div class="info-header">
+              <div class='section-title ProximaNova-Bold FS-48'>Хотите зарабатывать?</div>
+              <div class='section-subtitle ProximaNova-Semibold FS-24'>на интересном и перспективном деле</div>
+              <div class='section-main ProximaNova-Light FS-18'>Мы бесплатно научим Вас как всего за 10 часов
+                начать зарабатывать от <span class='FS-17'>100 000</span> рублей в месяц под строгим контролем
+                профессионалов.
+              </div>
+            </div>
+            <div class="container-btn_make-money btn-submitting-application">
+              <button class='btn-make-money btn-forAll application FS-17' type="button">Начать зарабатывать!</button>
+            </div>
+          </div>
+          <div class="container-form-submitting-application">
+            <div class='workspace'>
+              <div class='workspace-title ProximaNova-Bold FS-22'>ОСТАВТЕ ЗАЯВКУ</div>
+              <div class='workspace-article ProximaNova-Regular FS-16'>
+                Чтобы получить бесплатный пакет материалов о финансовом рынке
+              </div>
+              <form class='form-submitting-application form'>
+                  <input class="input-form-application input-name" name='name' type="text" placeholder="Ваше имя" />
+                  <input class="input-form-application input-number-phone" name='tlf' id='phone' type="text"
+                    placeholder="Ваш номер телефона" />
+                <button class='btn-form-submitting-application FS-15 
+                    btn-forAll thank' type="submit">Получить материалы</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Нижняя секция шапки -->
+        <div class="header-bottom">
+          <div class='bottom_arrow cursor'>
+            <img src='images/Слой-1.png'>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 1 основной раздел. Раздел о нашей компании -->
+    <main class='main_about-company padT-B-80'>
+      <div class="container">
+        <div class='container-title-about-company'>
+          <div class='title-about-company titles'>
+            <span>О НАШЕЙ КОМПАНИИ</span>
+          </div>
+        </div>
+        <div class='sections-about-company'>
+          <div class='section-about-company'>
+            <div class='about-company-article'>
+              <div class='about-company-article1 article ProximaNova-Light FS-18'>
+                Консалтинговая компания ООО "Эктив Моней" – <span class='ProximaNova-Bold'>партнер российского
+                  форекс-дилера
+                  ООО «Финанс Групп»</span>, имеющего лицензию Банка России на осуществление деятельности
+                профессионального участника рынка ценных бумаг.
+              </div>
+              <div class='about-company-article2 article ProximaNova-Light FS-18'>
+                <span class='ProximaNova-Bold'>Наша задача</span> – обучить клиентов эффективной работе с мировыми
+                финансовыми площадками,
+                с помощью уникальной авторской методики.
+              </div>
+            </div>
+            <div class='our-destinations'>
+              <div class='learning'>
+                <div class='bottom-learning'></div>
+                <div class='learnignZero ProximaNova-Bold FS-18'>Обучение с нуля</div>
+              </div>
+              <div class='professional-development'>
+                <div class='bottom-development'></div>
+                <div class='heightDevelopment ProximaNova-Bold FS-18'>Повышение квалификации</div>
+              </div>
+            </div>
+          </div>
+          <div class='section-video-about-company'>
+            <div class='container-video'>
+              <video class='video' controls preload="none" poster="images/iStock-1014770548_0.jpg">
+                <source src='Video/What is Consulting_.mp4' type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 2 основной раздел. Раздел обучение трейдеров -->
+    <main class='main_training-traders padT-B-80'>
+      <div class="container">
+        <div class='container-title-training-traders'>
+          <div class='section-title-training-traders titles'>
+            <span>ОБУЧЕНИЕ ТРЕЙДЕРОВ С НУЛЯ ЗА 0 РУБЛЕЙ!</span>
+          </div>
+        </div>
+        <div class='section-training-traders-article1 ProximaNova-Light FS-18'>
+          <span>
+            Наша уникальная <span class='ProximaNova-Bold'>бусплатная программа</span> обучения трейдеров состоит из
+            10-ти
+            часов занятий,
+            в которых мы изучим теорию и закрепим её практикой на демо-счёте.
+          </span>
+        </div>
+        <div class='section-training-traders-article2 ProximaNova-Light FS-18'>
+          <span>
+            По окончанию программы, <span class='ProximaNova-Bold'>Вы будите уметь:</span>
+          </span>
+        </div>
+        <div class="section-skills-flex-container">
+          <div class='section-skill'>
+            <img class='skill_img' src='images/иконка.png'>
+            <div class='text-skill ProximaNova-Light FS-16'>
+              Вам легко будет объективно оценивать финансовые рынки
+            </div>
+          </div>
+          <div class='section-skill'>
+            <img class='skill_img' src='images/Layer-15.png'>
+            <div class='text-skill ProximaNova-Light FS-16'>
+              Сможете грамотно оценивать риски
+              инвестирования в те или иные активы
+            </div>
+          </div>
+          <div class='section-skill'>
+            <img class='skill_img' src='images/Layer-153.png'>
+            <div class='text-skill ProximaNova-Light FS-16'>
+              Разбиратся в событиях на мировых финансовых рынках и
+              сможете самостоятельно их прогнозировать
+            </div>
+          </div>
+        </div>
+        <div class="section-skills-flex-container">
+          <div class='section-skill'>
+            <img class='skill_img' src='images/Layer-154.png'>
+            <div class='text-skill ProximaNova-Light FS-16'>
+              Анализировать котировки с помощью
+              специализированного ПО
+            </div>
+          </div>
+          <div class='section-skill'>
+            <img class='skill_img' src='images/иконка5.png'>
+            <div class='text-skill ProximaNova-Light FS-16'>
+              Составлять торговую стратегию с
+              доходностью от 10% в месяц
+            </div>
+          </div>
+          <div class='section-skill'>
+            <img class='skill_img' src='images/Layer 156.png'>
+            <div class='text-skill ProximaNova-Light FS-16'>
+              Получать прибыль от торговли, используя
+              аналитику и новости
+            </div>
+          </div>
+        </div>
+        <div class=btn-training-traders>
+          <div class="container-btn-consultation ">
+            <button class="btn-consultation btn-forAll application" type="button">Получить консультацию о курсе</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 3 основной раздел. Раздел почему стоит выбрать нас. -->
+    <main class='main_certificate padT-B-80'>
+      <div class="container">
+        <div class='container-title-certificate'>
+          <div class='section-title-certificate titles'>
+            <span>ПОЧЕМУ СТОИТ ВЫБРАТЬ НАШЕ ОБУЧЕНИЕ?</span>
+          </div>
+        </div>
+        <div class="section-flex-whyUs">
+          <div class='container-whyUs'>
+            <div class='whyUs'>
+              <div class='positionText ProximaNova-Regular FS-24'>10</div>
+            </div>
+            <div class='text-whyUs ProximaNova-Light FS-16'>10 часов индивидуального<br>обучения</div>
+          </div>
+          <div class='container-whyUs'>
+            <div class='whyUs'>
+              <div class='positionText ProximaNova-Regular FS-24'>5</div>
+            </div>
+            <div class='text-whyUs ProximaNova-Light FS-16'>Наша компания 5 лет работает<br>в обучении</div>
+          </div>
+          <div class='container-whyUs'>
+            <div class='whyUs'>
+              <div class='positionText ProximaNova-Regular FS-24'>1000</div>
+            </div>
+            <div class='text-whyUs ProximaNova-Light FS-16'>Прошли более 1000 начинающих<br>трейдеров</div>
+          </div>
+        </div>
+        <div class='container-certificate'>
+          <div class='box-certificate'>
+            <img class='certificate' src='images/20110210.JPG'>
+          </div>
+        </div>
+        <div class='container-text-certificate'>
+          <div class='box-text-certificate ProximaNova-Bold FS-18'>
+            <div class='text-certificate'>
+              Так же по окончанию обучения Вы получите сертификат о прохождении курса и доступ
+              к закрытой рассылке трейдеров по аналитике и инсайтам.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 4 основной раздел. Раздел набора группы. -->
+    <main class='main_group-set padT-B-80'>
+      <div class="container">
+        <div class='container-group-set'>
+          <div class='box-text-group-set'>
+            <div class='text-group-set'>
+              <div>
+                <div class='ProximaNova-Semibold FS-26'>НАБОР ГРУППЫ УЖЕ ИДЁТ</div>
+                <div class='ProximaNova-Light FS-18'>Успейте забронировать место в группе!</div>
+              </div>
+            </div>
+          </div>
+          <div class='box-btn-book-seats'>
+            <button class='btn-book-seats FS-15 btn-forAll application' type="button">Забронировать место!</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 5 основной раздел. Раздел отзывов. -->
+    <main class='main_feedbacks padT-B-80'>
+      <div class="container">
+        <div class='container-feedbacks-title'>
+          <div class='feedbacks-title titles'>
+            <span>ОТЗЫВЫ НАШИХ УЧЕНИКОВ</span>
+          </div>
+        </div>
+        <div class='container-slider-profiles'>
+          <div class='visible-part1'>
+            <div class='slider-profils'>
+              <div class='profil'>
+                <img src='/images/img_01.png'>
+                <div class='name ProximaNova-Bold FS-18'>Ольга Фролова</div>
+                <div class='age-city ProximaNova-Light FS-16'>23 года. Москва</div>
+              </div>
+              <div class='profil '>
+                <img src='/images/img_02.png'>
+                <div class='name ProximaNova-Bold FS-18'>Татьяна Петрова</div>
+                <div class='age-city ProximaNova-Light FS-16'>29 лет. Нижний Новгород</div>
+              </div>
+              <div class='profil'>
+                <img src='/images/img_03.png'>
+                <div class='name ProximaNova-Bold FS-18'>Наталья Емельянова</div>
+                <div class='age-city ProximaNova-Light FS-16'>19 лет. Самара</div>
+              </div>
+            </div>
+            <div class='container-moving-arrows'>
+              <div class='moving-left'>
+                <img src='/images/Rounded-Rectangle-5-copy-2.png'>
+              </div>
+              <div class='moving-right'>
+                <img src='/images/Rounded-Rectangle-5-copy.png'>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='container-slider-feedbacks'>
+          <div class='visible-part2'>
+            <div class='slider-feedbacks ProximaNova-Light FS-16'>
+              <div class='feedbacks'>
+                <div сlass='feedback'>
+                  В общем учился сам и потихоньку сливал депозит.
+                  В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил
+                  Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин.
+                  отделом и что мне дадут страховку на мой депозит на две недели, и что их
+                  аналитический отдел в курсе всех событий на две недели, и что можно заработать в
+                  три раза больше чем сумма на которую я пополнюсь.
+                </div>
+                <div class='feedback padT-10'>
+                  Я взял кредитную карту в банке и перевел все средства 300 000р брокеру.
+                  Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на
+                  счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали
+                  что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере.
+                </div>
+              </div>
+              <div class='feedbacks'>
+                <div сlass='feedback'>
+                  В общем учился сам и потихоньку сливал депозит.
+                  В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил
+                  Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин.
+                  отделом и что мне дадут страховку на мой депозит на две недели, и что их
+                  аналитический отдел в курсе всех событий на две недели, и что можно заработать в
+                  три раза больше чем сумма на которую я пополнюсь.
+                </div>
+                <div class='feedback padT-10'>
+                  Я взял кредитную карту в банке и перевел все средства 300 000р брокеру.
+                  Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на
+                  счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали
+                  что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере.
+                </div>
+              </div>
+              <div class='feedbacks'>
+                <div сlass='feedback'>
+                  В общем учился сам и потихоньку сливал депозит.
+                  В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил
+                  Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин.
+                  отделом и что мне дадут страховку на мой депозит на две недели, и что их
+                  аналитический отдел в курсе всех событий на две недели, и что можно заработать в
+                  три раза больше чем сумма на которую я пополнюсь.
+                </div>
+                <div class='feedback padT-10'>
+                  Я взял кредитную карту в банке и перевел все средства 300 000р брокеру.
+                  Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на
+                  счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали
+                  что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='container-btn-feedbacks '>
+        <div class='box-btn-feedbacks'>
+          <button class='btn-feedbacks btn-forAll FS-16'>Оставить отзыв</button>
+        </div>
+      </div>
+    </main>
+    <!-- 6 основной раздел. Раздел другие услуги. -->
+    <main class='main_other-services padT-B-80'>
+      <div class="container">
+        <div class='container-other-services-title'>
+          <div class='other-services-title titles'>
+            <span>ДРУГИЕ НАШИ УСЛУГИ</span>
+          </div>
+        </div>
+        <div class='flex_other-services'>
+          <div class='container-other-services'>
+            <div class='box-other-services'>
+              <div class='img-other-services'>
+                <img src='/images/img.png'>
+              </div>
+              <div class='heading-other-services ProximaNova-Semibold FS-20 pad-25'>Инвестиции</div>
+              <div class='article-other-services ProximaNova-Light FS-16 pad-25'>
+                Мы составим для Вас персональный финансовый план по инвестированию
+              </div>
+              <div class='container-btn-find-out pad-25'>
+                <button class='btn-find-out btn-forAll application FS-15'>Узнать</button>
+              </div>
+            </div>
+          </div>
+          <div class='container-other-services'>
+            <div class='box-other-services'>
+              <div class='ing-other-services'>
+                <img src='/images/img1.png'>
+              </div>
+              <div class='heading-other-services ProximaNova-Semibold FS-20 pad-25 '>Доверительное управление</div>
+              <div class='article-other-services ProximaNova-Light FS-16 pad-25'>
+                Профессиональные трейдеры компании готовы управлять Вашими финансами
+              </div>
+              <div class='container-btn-find-out pad-25'>
+                <button class='btn-find-out btn-forAll application FS-15'>Узнать</button>
+              </div>
+            </div>
+          </div>
+          <div class='container-other-services'>
+            <div class='box-other-services'>
+              <div class='img-other-services'>
+                <img src='/images/img2.png'>
+              </div>
+              <div class='heading-other-services ProximaNova-Semibold FS-20 pad-25'>Рынки криптовалюты</div>
+              <div class='article-other-services ProximaNova-Light FS-16 pad-25'>
+                Обучение торговли и управление финансами и торговлей на рынках криптовалюты и ICO
+              </div>
+              <div class='container-btn-find-out pad-25'>
+                <button class='btn-find-out btn-forAll application FS-15'>Узнать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 7 основной раздел. Раздел остались вопросы? -->
+    <main class='main_questions padT-B-80'>
+      <div class="container">
+        <div class='container-other-services-title'>
+          <div class='other-services-title titles'>
+            <span>ОСТАЛИСЬ ВОПРОСЫ?</span>
+          </div>
+        </div>
+        <div class='article-questions centr ProximaNova-Regular padT-15'>Задайте их профессиональному трейдеру!</div>
+        <div class='container-form-consultation centr padT-30'>
+          <form class='form-consultation form'>
+            <input class='input-form-application input-consultation input-name' name='name' placeholder="Ваше имя"
+              type="text">
+            <input class='input-form-application input-consultation input-number-phone' name='tlf' id='phone2'
+              placeholder="Ваш номер телефона" type="text">
+            <div>
+              <button class='btn-get-consultation FS-15 btn-forAll thank' type="submit">Получить
+                консультацию</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- 8 основной раздел. Раздел Как нас найти? -->
+    <main class='main_location padT-B-80'>
+      <div class="container">
+        <div class='container-location-title'>
+          <div class='location-title titles'>
+            <span>ГДЕ ПРОХОДИТ ОБУЧЕНИЕ?</span>
+          </div>
+        </div>
+        <div class='container-location padT-45'>
+          <div class='container-map'>
+            <div class='map'>
+              <script type="text/javascript" charset="utf-8" async src=
+              "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae1164c6abeb707cad4c82a2587fd44318aabdb229d06b1c13542f4ef3eace1ae&amp;width=730&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class='container-contact-address padL-40'>
+              <div class='title-address ProximaNova-Semibold FS-18'>Адрес нашего тренинг центра</div>
+              <div class='address ProximaNova-Regular FS-16'>
+                <div class='icon1'><img class='icon_img' src='images/map-marker.png'></div>
+                Москва, улица Победы, 45
+              </div>
+              <div class='title-nmbrTLF ProximaNova-Semibold FS-18 padT-30'>Остались вопросы? Позвоните</div>
+              <div class='nmbrTLF ProximaNova-Regular FS-16 '>
+                <div class='icon2'><img class='icon_img' src='images/layer_16.png'></div>
+                +7 (535) 111-10-01
+              </div>
+              <div class='title-set-application ProximaNova-Semibold FS-18 padT-30'>Или оставьте заявку на звонок</div>
+              <div class='padT-20'>
+                <button class='btn-order-call FS-14 btn-forAll application' type="button">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <!-- ПОДВАЛ -->
+    <footer class='footer padT-45'>
+      <div class='container'>
+        <div class="header-top">
+          <div class="logo">
+            <img src="images/free_horizontal_on_white_by_logaster.png" alt="Logo" style="width: 100%; height: 100%" />
+          </div>
+          <div class="info-header-top">
+            <div class='section-info-header-top_text'>
+              Обучаем зарабатывать и инвестировать
+              <div class='st'>на финансовых рынках с минимумом риска</div>
+              </span>
+            </div>
+          </div>
+          <div class="phone-number">
+            <div class='section-question'>Есть вопросы?</div>
+            <div class='section-number'>+7 535 111 10 01</div>
+          </div>
+          <div class="container-btn-call-me btn-submitting-application">
+            <button class='btn-call-me FS-15 btn-forAll application' type="button">Перезвоните мне!</button>
+          </div>
+        </div>
+      </div>
+      <div class='url-address'>www.mony25.ru</div>
+    </footer>
+    <script src='btn-click.js' type='module'></script>
+    <script src='maskPhone.js'></script>
+    <script src='./Валидность форм/validity.js' type='module'></script>
+    <script src='./slider/slider.js'></script>
+    <script src='./Preloader/preloader.js'></script>
+  </div>
+</body>
+
+</html>

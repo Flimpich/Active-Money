@@ -1,0 +1,671 @@
+    /* Общие стили */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.hidden {
+    overflow: hidden;
+}
+.container {
+    max-width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.btn-forAll {
+    background: #ffdc38;
+    border: 0;
+    border-radius: 30px;
+    font-family: 'ProximaNova-Bold';
+}
+.btn-forAll:hover {
+    background: #ffa238;
+    box-shadow:0 0 15px 3px rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+    /* Заголовок с чертой */
+.titles {
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: center;
+    position: relative;
+    font-family: 'ProximaNova-Semibold';
+    font-size: 26px;
+}
+.titles::after {
+    content: '';
+    width: 44px;
+    height: 1px;
+    background: linear-gradient(to right, red, blue);
+    position: absolute;
+    bottom: 0;
+    left: calc(100%/2 - 44px/2);
+}
+/*-------------------------------------------------------------*/
+
+    /* ВСПЛЫВАЮЩИЕ ОКНА */
+/* Кнопка закрытия вслывающих окон */
+.container-btn-close {
+    width: 20px;
+    height: 20px;
+    left: 90%;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+/* Общие стили для всплывающих окон */
+.sections-application {
+    background: linear-gradient(45deg, #2785d2, #7346c0);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: 1s ease all;
+    transform-origin: 0 0;
+    transform: scale(0);
+    opacity: 0;
+}
+/* Фото сертификата */
+/* Раздел благодарности */
+.container-thank {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    border: 1px solid white;
+}
+.container-text-thank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* Раздел формы отправки заявки */
+.workspace-submitting-application {
+    max-width: 360px;
+    text-align: center;
+    border-top: 1px solid white;
+    position: relative;
+}
+.container-btn-close::before,
+.container-btn-close::after {
+    content: '';
+    width: 90%;
+    height: 1.5px;
+    background-color: rgb(184, 184, 184);
+    position: absolute;
+    left: calc(50% - 80%/2);
+    top: 50%;
+    transform-origin: center;
+    transform: rotateZ(-45deg);
+}
+.container-btn-close::after {
+    transform: rotateZ(45deg);
+}
+.container-btn-close:hover:before,
+.container-btn-close:hover:after {
+    background-color: rgb(255, 255, 255);
+}
+/*-------------------------------------------------------------*/
+
+/* ШАПКА */
+.header {
+    width: 100%;
+    background: linear-gradient(45deg, #2785d2f1, #7346c0f8), 
+    url('images/lboimp_ru-konsalt.jpg') no-repeat center; 
+    color: white;
+}
+    /* Верх шапки */
+.header-top {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.logo {
+    max-width: 180px;
+    max-height: 45px;
+    padding-right: 15px;
+}
+.info-header-top {
+    max-width: 390px;
+    height: 100%;
+    padding: 0 15px;  
+    line-height: 1.5em;
+}
+.section-info-header-top_text {
+    width: 360px;
+    height: 100%;
+    padding-left: 30px;
+    line-height: 100%;
+}
+.st {
+    margin-top:5px;
+}
+.phone-number {
+    max-width: 375px;
+    height: 100%;
+    padding-left: 15px;
+    text-align: right;
+    flex-grow:2;
+}
+.section-question {
+    padding-left: 15px;
+}
+.section-number {
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+.container-btn-call-me {
+    max-width: 195px;
+    height: auto;
+    padding-left: 23px;
+}
+.btn-call-me {
+    width: 172px;
+    height: 45px;
+}
+    /* Мид шапки */
+.header-middle {
+    display: flex;
+}
+.info-header-middle {
+    max-width: 765px;
+    padding-top: 145px;
+}
+.info-header {
+    padding-right: 105px;
+}
+.section-title {
+    line-height: 0.8;
+}
+.section-subtitle{
+    margin-top: 16px;
+    line-height: 1em;
+}
+.section-main{
+    margin-top: 20px;
+}
+.container-btn_make-money {
+    max-width: 100%;
+    height: auto;
+}
+.btn-make-money {
+    width: 242px;
+    height: 62px;
+    margin-top: 35px;
+}
+.container-form-submitting-application {
+    padding: 0 0 0 15px;
+    flex-grow: 2;
+}
+.workspace {
+    max-width: 360px;
+    margin: 90px 0 0 0 ;
+    text-align: center;
+    border-top: 1px solid white;
+    position: relative;
+}
+    /* Рамка из псевдоэлементов */
+.workspace::before, .workspace::after,
+.workspace-submitting-application::before,
+.workspace-submitting-application::after {
+    content: '';
+    width: 1px;
+    height: 92%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.workspace::before,
+.workspace-submitting-application::before {
+    left: 0;
+}
+.form-submitting-application::before,
+.form-submitting-application::after {
+    content: '';
+    width: 18%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: 8%;
+}
+.form-submitting-application::before {
+    left: 0;
+}
+    /* Рабочая область формы */
+.workspace-title {
+    padding-top: 38px
+}
+.workspace-article {
+    padding: 18px 30px 30px 30px;
+}
+.input-form-application {
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border:0;
+    outline: none;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: 17px 13px;
+}
+.input-name {
+    margin-bottom: 15px;
+    background-image: url('images/user_icon.png');
+    position: relative;
+}
+.input-number-phone {
+    margin-bottom: 25px;
+    background-image: url('images/phone_icon.png');
+}
+.input-form-application::placeholder {
+    content: '';
+    color:rgba(117, 117, 117, 0.349);
+}
+.btn-form-submitting-application {
+    width: 210px;
+    height: 55px;
+}
+    /* Низ шапки */
+.header-bottom {
+    display:flex;
+    padding-top: 95px;
+    justify-content: center;
+}
+/*-------------------------------------------------------------*/
+
+/* ОСНОВНЫЕ РАЗДЕЛЫ */
+    /* Раздел №1. Раздел о нашей компании */
+    /* Секция: Информация о нас */
+.sections-about-company{
+    padding-top: 45px;
+    display: flex;
+}
+.section-about-company {
+    max-width: 570px;
+    padding-right: 15px;
+}
+.article {
+    line-height: 1.47em;
+    text-align: justify;
+}
+.about-company-article2 {
+    padding-top: 10px;
+}
+.our-destinations {
+    display: flex;
+    padding-top: 90px;
+}
+.learning, .professional-development {
+    width: 50%;
+    height: auto;
+    padding-right: 30px;
+}
+.professional-development:nth-child(2){
+    padding-right: 0;
+}
+.bottom-learning, .bottom-development {
+    max-width: 100%;
+    height: 51px;
+    background-color: #1991d4;
+    border-radius: 5px;
+    position: relative;
+}
+.bottom-development {
+    background-color: #7e66e7; 
+}
+.learnignZero, .heightDevelopment {
+    padding-top: 24px;
+    position: relative;
+    left: 17px;
+    line-height: 1;
+}
+.bottom-learning::after, 
+.bottom-development::after {
+    content: '';
+    width: 102px;
+    height: 117px;
+    background-image: url('images/img11.png');
+    position:absolute;
+    bottom: -5px;
+    left: 17px;
+}
+.bottom-development::after {
+    background-image: url('images/img12.png');
+}
+    /* Секция: Видео о нашей компании */
+.section-video-about-company {
+    flex-grow: 2;
+    padding-left: 15px;
+    border: 0;
+}
+.container-video {
+    width: 100%;
+    height: 100%;
+}
+.video {
+    width: 100%;
+    height: inherit;
+}
+
+    /* Раздел №2. Раздел обучение трейдеров */
+.main_training-traders {
+    background-color: #f4f9fb;
+}
+    /* Информация раздела оубчения */
+.section-training-traders-article1,
+.section-training-traders-article2 {
+    text-align: center;
+    padding: 23px 40px 0 40px;
+}
+    /* Навыки которые можно получить */
+.section-skills-flex-container {
+    display: flex;
+    padding-top: 48px;
+}
+.section-skill {
+    max-width: 380px;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 15px;
+}
+.skill_img {
+    margin-bottom: 10px;
+}
+.btn-training-traders {
+    padding-top: 40px;
+    text-align: center;
+}
+.container-btn-consultation {
+    width: 100%;
+    height: 57px;
+}
+.btn-consultation {
+    margin: 0 auto;
+    width: 300px;
+    height: 100%;
+    font-size: 15px;
+}
+    /* Раздел №3. Почему нужно выбрать нас. */
+    /* Причины выбора нас */
+.section-flex-whyUs {
+    display: flex;
+    padding-top: 38px;
+    width: 100%;
+}
+.container-whyUs {
+    padding: 24px 0 24px 0;
+    border: 1px solid #eeedee;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 0 10px;
+}
+.whyUs {
+    margin: 0 auto;
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #2f87d8,#ae5ff8);
+    position: relative;
+}
+.positionText {
+    width: 55px;
+    height: 22px;
+    color: white;
+    position: absolute;
+    line-height: 1;
+    top: calc(50% - 22px/2);
+    left: calc(50% - 55px/2);
+}
+.text-whyUs {
+    padding-top: 15px;
+}
+    /* Сертификат */
+.container-certificate{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 32px;
+}
+.box-certificate {
+    width: 100%;
+}
+.certificate {
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid #eeedee;
+}
+.box-text-certificate {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center
+}
+.text-certificate {
+    max-width: 780px;
+    text-align: center;
+    line-height: 1.5em;
+    color:rgb(104, 104, 104)
+}
+    /* Раздел №4. Набор группы. */
+.main_group-set {
+    background: linear-gradient(to right, #2785d2d3, #7346c0f8), 
+    url('images/-xocQruy6B9zTrp9i-0.jpg') no-repeat center;
+}
+.container-group-set {
+    display: flex;
+    justify-content: center;
+}
+.box-text-group-set {
+    width: 600px;
+}
+.box-btn-book-seats {
+    padding-left: 50px;
+    flex-grow: 1;
+}
+.text-group-set {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    width: 100%;
+}
+.btn-book-seats {
+    width: 230px;
+    height: 55px;
+}
+    /* Раздел №5. Раздел отзывов. */
+.container-slider-profiles,
+.container-slider-feedbacks {
+    padding-top: 25px;
+    max-width: 100%;
+}
+    /* Слайдер профилей */
+.visible-part1,
+.visible-part2 {
+    max-width: 390px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.slider-profils {
+    display: flex;
+    position: relative;
+    text-align: center;
+    left: -100%;
+} 
+.smoothness {
+    transition: 1s ease all;
+}
+.profil {
+    min-width: 390px;
+    line-height: 1;
+    padding: 0 15px;
+}
+.name {
+    margin: 10px 0 10px 0;
+}
+.container-moving-arrows {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    display: inline-flex;
+    justify-content:space-around;
+}
+.moving-right,
+.moving-left {
+    cursor: pointer;
+}
+    /* Слайдер отзывов */
+.visible-part2 {
+    max-width: 780px;
+}
+.slider-feedbacks {
+    display: flex;
+    position: relative;
+    text-align: center;
+    left: -100%;
+}
+.feedbacks {
+    min-width: 100%;
+    max-height: 215px;
+    padding: 0 15px;
+}
+    /* Кнопка отправки отзывов */
+.container-btn-feedbacks {
+    padding-top: 35px;
+}
+.box-btn-feedbacks {
+    margin: 0 auto;
+    width: 210px;
+    height: 55px;
+}
+.btn-feedbacks {
+    width: 100%;
+    height: 100%;
+}
+    /* Раздел №6. Раздел другие услуги. */
+.main_other-services {
+    background-color: #f4f9fb;
+}
+.flex_other-services {
+    display: flex;
+    padding-top: 25px;
+}
+.container-other-services {
+    background-color: white;
+    margin: 0 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+.box-other-services {
+    padding: 9px 9px 30px 9px;
+}
+.container-other-services:nth-child(1) {
+    margin-left: 0;
+}
+.container-other-services:nth-child(3) {
+    margin-right: 0;
+}
+.article-other-services {
+    margin: 0 auto;
+    max-width: 270px;
+}
+.article-other-services:nth-child(3) {
+    max-width: 300px;
+}
+.btn-find-out {
+    width: 150px;
+    height: 45px;
+}
+    /* Раздел №7. Остались вопросы? */
+.main_questions {
+    color: white;
+    background: linear-gradient(to right, #2785d2d3, #7346c0f8),
+    url('images/layer_23.png') no-repeat center;
+}
+.input-consultation:nth-child(1) {
+    margin-right: 5px;
+}
+.input-consultation:nth-child(2) {
+    margin: 0 5px 15px 0;
+}
+.centr {
+    text-align: center;
+}
+.btn-get-consultation {
+    width: 255px;
+    height: 55px;
+}
+    /* Раздел №8. Как нас найти? */
+.container-map {
+    display: flex;
+    align-items: center;
+}
+.map {
+    max-width: 730px;
+    max-height: 410px;
+}
+.nmbrTLF, .address {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding-top: 10px;
+}
+.icon1, .icon2 {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    background: linear-gradient(to right, #2785d2d3, #7346c0f8),
+    no-repeat center;
+}
+.icon2 {
+    background: linear-gradient(to right, #2785d2d3, #7346c0f8)
+     no-repeat center;
+}
+.icon_img {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    filter: brightness(0) invert(1);
+    left: calc(50% - 50%/2);
+    top: calc(50% - 60%/2);
+}
+.btn-order-call {
+    width: 170px;
+    height: 45px;
+}
+/*-------------------------------------------------------------*/
+
+    /* Раздел №9. Подвал */
+.footer {
+    background: linear-gradient(45deg, #2785d2f1, #7346c0f8), 
+    url('images/layer_24.png') no-repeat center;
+    position: relative;
+    color: white;
+}
+.url-address {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 45px;
+    border-top: 1px solid #6b86d3;
+}
