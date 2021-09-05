@@ -1,0 +1,9 @@
+@media (max-width: 486px) {
+    .container-thank {
+        width: 250px;
+    }
+    .container-appearance-form {
+        width: 300px;
+        padding: 0 15px;
+    }
+}
