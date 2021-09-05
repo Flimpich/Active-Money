@@ -1,0 +1,30 @@
+@media (max-width: 991px) {
+    .container-group-set {
+        flex-flow: column;
+        text-align: center;
+    }
+    .box-text-group-set,
+    .box-btn-book-seats {
+        width: 100%;
+        padding-left: 0;
+    }
+    .text-group-set {
+        justify-content: center;
+    }
+    .box-btn-book-seats {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 486px) {
+    .grupp {
+        font-size: 22px;
+    }
+    .booking {
+        font-size: 14px;
+    }
+    .btn-book-seats {
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+    }
+}

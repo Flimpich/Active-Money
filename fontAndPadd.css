@@ -47,6 +47,9 @@
 .FS-20 {
     font-size: 20px;
 }
+.FS-19 {
+    font-size: 20px;
+}
 .FS-18 {
     font-size: 18px;
 }
@@ -70,8 +73,8 @@
 .padT-30 {
     padding-top: 30px;
 }
-.pad-25 {
-    padding: 20px 15px 0 15px;
+.padT-25 {
+    padding-top: 25px;
 }
 .padT-20 {
     padding-top: 20px;
@@ -80,7 +83,7 @@
     padding-top: 15px;
 }
 .padT-10 {
-    padding: 10px;
+    padding-top: 20px;
 }
     /* Отступы TOP-BOTTOM */
 .padT-B-80 {

@@ -1,0 +1,20 @@
+@media (max-width: 486px) {
+    .article-questions {
+        font-size: 14px;
+    }
+    .input-consultation {
+        width: 240px;
+    }
+    .btn-get-consultation {
+        font-size: 13px;
+        width: 225px;
+        height: 45px;
+    }
+}
+@media (max-width: 327px) {
+    .btn-get-consultation {
+        font-size: 12px;
+        width: 165px;
+        height: 45px;
+    }
+}

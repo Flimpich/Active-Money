@@ -1,0 +1,72 @@
+@media (max-width: 1199px) {
+    .main-1 {
+        padding: 0 15px;
+    }
+    .about-company-article {
+        font-size: 16px;
+    }
+    .our-destinations {
+        font-size: 16px;
+    }
+    .container-video {
+        height: 97%;
+        width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    .sections-about-company {
+        flex-flow: column;
+    }
+    .section-about-company {
+        min-width: 100%;
+        padding-right: 0;
+    }
+    .section-video-about-company {
+        height: 375px;
+        padding: 0;
+        margin-top: 70px;
+    }
+    .bottom-learning::after, 
+    .bottom-development::after {
+        bottom: -5px;
+        left: calc(50% - 102px/2);
+    }
+    .learnignZero, .heightDevelopment {
+        display: flex;
+        justify-content:space-around;
+        left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .titles {
+        font-size: 22px;
+    }
+    .sections-about-company {
+        padding-top: 25px;
+    }
+    .our-destinations {
+        flex-flow: column;
+    }
+    .learning, .professional-development {
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+    }
+    .professional-development {
+        margin-top: 70px;
+    }
+}
+@media (max-width: 576px) {
+    .titles {
+        font-size: 20px;
+    }
+    .about-company-article {
+        font-size: 14px;
+    }
+    .section-video-about-company {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+}

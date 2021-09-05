@@ -1,0 +1,32 @@
+
+@media (max-width: 1199px) {
+    .section-training-traders-article1,
+    .section-training-traders-article2 {
+        font-size: 16px;       
+    }
+    .section-skills-flex-container {
+        font-size: 14px;
+    }
+}
+@media (max-width: 576px) {
+    .section-skills-flex-container {
+        flex-flow: column;
+        padding-top: 0;
+        align-items: center;
+    }
+    .section-skill {
+        width: 100%;
+        text-align: center;
+        justify-content: stretch;
+        padding: 15px 0;
+        font-size: 1em;
+    }
+    .text-skill {
+        max-width: 55%;
+        margin: 0 auto;
+    }
+    .btn-consultation {
+        width: 230px;
+        font-size: 13px;
+    }
+}

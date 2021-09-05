@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+    .box-text-certificate {
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px) {
+    .section-flex-whyUs {
+        flex-flow: column;
+    }
+    .container-whyUs {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .container-whyUs:nth-child(1) {
+        margin-top: 0;
+    }
+    .box-text-certificate {
+        font-size: 14px;
+    }
+}
+@media (max-width: 486px) {
+
+}
+@media (max-width: 327px) {
+}

@@ -29,10 +29,10 @@ export default class BtnClick {
             item.addEventListener('click', () => {
             this.workspaceSubmitApplication.style.transform = 'scale(0)';
             this.workspaceSubmitApplication.style.opacity = '';
-            this.workspaceSubmitApplication.style.zIndex = '';
+            this.workspaceSubmitApplication.style.zIndex = '0';
             this.formThank.style.transform = 'scale(0)';
             this.formThank.style.opacity = '';
-            this.formThank.style.zIndex = '';
+            this.formThank.style.zIndex = '0';
             });
         });
     //Событие перемещения по стрелке из шапки на следующий раздел//

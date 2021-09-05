@@ -1,0 +1,163 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+@media (max-width: 1199px) {
+        /* Шапка */
+    .container {
+        max-width: 960px;
+    }
+    .section-info-header-top_text {
+        padding-left: 0;
+    }
+    .section-number {
+        font-size: 15px;
+    }
+    .info-header-middle {
+        margin-right: 0;
+    }
+}
+@media (max-width: 991px) {
+    .padT-B-80 {
+        padding: 30px 0;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .header-top {
+        align-items: center;
+    }
+    .logo-img {
+        width: 90px;
+    }
+    .info-header-top {
+        font-size: 14px;
+    }
+    .btn-call-me {
+        display: none;
+    }
+    .media-991 {
+        display: block;
+        margin: 0;
+    }
+    .header-middle {
+        flex-flow: column;
+        align-items: center;
+    }
+    .info-header-middle {
+        text-align: center;
+    }
+    .section-main-text{
+        font-size: 17px;
+        text-align: center;
+    }
+    .container-form-submitting-application {
+        padding: 0;
+    }
+    .workspace {
+        max-width: 100%;
+        padding: 38px 0 0 0;
+    }
+    .form-submitting-application::before,
+    .form-submitting-application::after {
+        width: 30%;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    .info-header-top {
+        flex-grow: 1;
+    }
+    .phone-number {
+        display: none;
+    }
+    .info-header-middle {
+        padding-top: 90px;
+    }
+    .workspace {
+        max-width: 360px;
+        padding: 38px 0 0 0;
+    }
+    .form-submitting-application::before,
+    .form-submitting-application::after {
+        width: 18%;
+    }
+    .header-bottom {
+        padding-top: 55px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width:100%;
+    }
+    .info-header-top {
+        font-size: 12px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .section-subtitle{
+        font-size: 18px;
+    }
+    .section-main-text{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .btn-make-money {
+        width: 202px;
+        height: 52px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 486px) {
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-call-me {
+        display: block;
+    }
+    .media-991 {
+        display: none;
+    }
+    .info-header-top {
+        display: none;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .section-subtitle{
+        font-size: 14px;
+    }
+    .section-main-text{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    .workspace {
+        max-width: 300px;
+        padding: 38px 0 0 0;
+    }
+    .form-submitting-application::before,
+    .form-submitting-application::after {
+        width: 12%;
+    }
+    .input-media-486 {
+        width: 200px;
+    }
+}
+@media (max-width: 327px) {
+    .header-top {
+        display: flex;
+        flex-flow: column;
+    }
+    .container-btn-call-me {
+        padding: 20px 0 0 0;
+    }
+    .logo {
+        padding-right: 0;
+    }
+}

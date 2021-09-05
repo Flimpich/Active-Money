@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+.displ {
+    display: none;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -14,7 +17,7 @@ html {
     max-width: 1170px;
     height: auto;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 .btn-forAll {
     background: #ffdc38;
@@ -129,12 +132,14 @@ html {
 .header-top {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
 }
 .logo {
     max-width: 180px;
-    max-height: 45px;
+    min-height: 1px;
     padding-right: 15px;
+}
+.logo-img {
+    width: 100%;
 }
 .info-header-top {
     max-width: 390px;
@@ -143,10 +148,11 @@ html {
     line-height: 1.5em;
 }
 .section-info-header-top_text {
-    width: 360px;
+    max-width: 360px;
     height: 100%;
     padding-left: 30px;
     line-height: 100%;
+
 }
 .st {
     margin-top:5px;
@@ -154,9 +160,8 @@ html {
 .phone-number {
     max-width: 375px;
     height: 100%;
-    padding-left: 15px;
     text-align: right;
-    flex-grow:2;
+    flex-grow: 1;
 }
 .section-question {
     padding-left: 15px;
@@ -176,16 +181,21 @@ html {
     width: 172px;
     height: 45px;
 }
+.media-991 {
+    max-width: 60px;
+    height: 45px; 
+    padding: 13px 20px;
+    display: none;
+}
     /* Мид шапки */
 .header-middle {
     display: flex;
 }
 .info-header-middle {
-    max-width: 765px;
+    max-width: 100%;
     padding-top: 145px;
-}
-.info-header {
-    padding-right: 105px;
+    text-align: left;
+    margin-right: 30px;
 }
 .section-title {
     line-height: 0.8;
@@ -194,7 +204,7 @@ html {
     margin-top: 16px;
     line-height: 1em;
 }
-.section-main{
+.section-main-text{
     margin-top: 20px;
 }
 .container-btn_make-money {
@@ -216,6 +226,7 @@ html {
     text-align: center;
     border-top: 1px solid white;
     position: relative;
+    padding: 38px 30px 0 30px;
 }
     /* Рамка из псевдоэлементов */
 .workspace::before, .workspace::after,
@@ -248,10 +259,12 @@ html {
 }
     /* Рабочая область формы */
 .workspace-title {
-    padding-top: 38px
+    margin-bottom: 20px;
 }
 .workspace-article {
-    padding: 18px 30px 30px 30px;
+    max-width: 254px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 .input-form-application {
     width: 300px;
@@ -292,11 +305,13 @@ html {
     /* Раздел №1. Раздел о нашей компании */
     /* Секция: Информация о нас */
 .sections-about-company{
+    width: 100%;
+    height: auto;
     padding-top: 45px;
     display: flex;
 }
 .section-about-company {
-    max-width: 570px;
+    max-width: 50%;
     padding-right: 15px;
 }
 .article {
@@ -349,17 +364,16 @@ html {
 }
     /* Секция: Видео о нашей компании */
 .section-video-about-company {
-    flex-grow: 2;
+    height: 375px;
     padding-left: 15px;
-    border: 0;
 }
 .container-video {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 .video {
-    width: 100%;
     height: inherit;
+    width: 100%;
 }
 
     /* Раздел №2. Раздел обучение трейдеров */
@@ -370,7 +384,7 @@ html {
 .section-training-traders-article1,
 .section-training-traders-article2 {
     text-align: center;
-    padding: 23px 40px 0 40px;
+    padding: 23px 2% 0 2%;
 }
     /* Навыки которые можно получить */
 .section-skills-flex-container {
@@ -378,9 +392,9 @@ html {
     padding-top: 48px;
 }
 .section-skill {
-    max-width: 380px;
+    width: calc(100%/3);
     text-align: center;
-    flex-grow: 1;
+    justify-content: stretch;
     padding: 0 15px;
 }
 .skill_img {
@@ -474,11 +488,11 @@ html {
     justify-content: center;
 }
 .box-text-group-set {
-    width: 600px;
+    width: 50%;
 }
 .box-btn-book-seats {
     padding-left: 50px;
-    flex-grow: 1;
+    width: 50%;
 }
 .text-group-set {
     display: flex;
@@ -514,7 +528,7 @@ html {
     transition: 1s ease all;
 }
 .profil {
-    min-width: 390px;
+    min-width: 100%;
     line-height: 1;
     padding: 0 15px;
 }
@@ -531,6 +545,10 @@ html {
 .moving-right,
 .moving-left {
     cursor: pointer;
+    padding: 0 0 0 30px;
+}
+.moving-left {
+    padding: 0 30px 0 0;
 }
     /* Слайдер отзывов */
 .visible-part2 {
@@ -544,7 +562,7 @@ html {
 }
 .feedbacks {
     min-width: 100%;
-    max-height: 215px;
+    height: auto;
     padding: 0 15px;
 }
     /* Кнопка отправки отзывов */
@@ -565,16 +583,23 @@ html {
     background-color: #f4f9fb;
 }
 .flex_other-services {
+    width: 100%;
     display: flex;
     padding-top: 25px;
 }
 .container-other-services {
+    width: calc(100%/3 - 60px);
     background-color: white;
     margin: 0 15px;
     flex-grow: 1;
     text-align: center;
+    box-shadow: 0 0 10px 2px rgb(170, 170, 170);
 }
 .box-other-services {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content:space-between;
     padding: 9px 9px 30px 9px;
 }
 .container-other-services:nth-child(1) {
@@ -582,6 +607,13 @@ html {
 }
 .container-other-services:nth-child(3) {
     margin-right: 0;
+}
+.imgService {
+    width: 100%;
+}
+.heading-other-services {
+    max-width: 98%;
+    margin: 0;
 }
 .article-other-services {
     margin: 0 auto;
@@ -619,20 +651,29 @@ html {
     align-items: center;
 }
 .map {
-    max-width: 730px;
+    min-width: 65.76%;
     max-height: 410px;
+    box-shadow: 0 0 10px 3px rgb(150, 150, 150);
+    z-index: 2;
 }
-.nmbrTLF, .address {
+.container-contact-address {
+    width: 100%;
+}
+.box-nmbrTLF, .box-address {
     display: flex;
     align-items: center;
     line-height: 1;
     padding-top: 10px;
 }
+.address,
+.nmbrTLF {
+    padding-left: 10px;
+    max-width: 80%;
+}
 .icon1, .icon2 {
     position: relative;
     width: 28px;
     height: 28px;
-    margin-right: 10px;
     display: inline-block;
     border-radius: 20px;
     background: linear-gradient(to right, #2785d2d3, #7346c0f8),
@@ -668,4 +709,19 @@ html {
     padding: 30px 0;
     margin-top: 45px;
     border-top: 1px solid #6b86d3;
+}
+
+
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 486px) {
+
+}
+@media (max-width: 327px) {
 }
